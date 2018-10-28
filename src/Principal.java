@@ -17,6 +17,7 @@ public class Principal {
 				try {
 					VentanaPrincipal ventana = new VentanaPrincipal();
 					ventana.inicializar();
+					
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
