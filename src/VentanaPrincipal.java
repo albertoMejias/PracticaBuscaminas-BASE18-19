@@ -14,6 +14,19 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
+import org.omg.IOP.Codec;
+/**
+ * Declaramos los componentes que vamos a utilizar para la construccion del buscaminas
+ * Tambien tenemos los colores, paneles y botones. Tambien tenemos el boton GO/Empezar 
+ * y la pantalla donde veremos nuestra puntuacion. 
+ * 
+ * 
+ * @author albertomejias
+ * @version 1.0
+ * @since 1.0
+ * @link VentanaPrincioal#Iniciar().
+ * 
+ */
 public class VentanaPrincipal {
 
 	// La ventana principal, en este caso, guarda todos los componentes:
@@ -46,8 +59,16 @@ public class VentanaPrincipal {
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		juego = new ControlJuego();
 	}
+	
+	
 
-	// Inicializa todos los componentes del frame
+	/**
+	 *  Inicializacion de los componentes del frame
+	 * 
+	 * Inicializamos los componentes necesarios para la ejecucion del buscaminas
+	 * Le agregamos las posiciones, tamaño y colocacion a las celdas
+	 * iniciamos el programa 
+	 */
 	public void inicializarComponentes() {
 
 		// Definimos el layout:
@@ -139,10 +160,6 @@ public class VentanaPrincipal {
 	 */
 	
 	
-	
-	
-	
-	
 	public void inicializarListeners() {
 		for (int i = 0; i < botonesJuego.length; i++) {
 			for (int j = 0; j < botonesJuego.length; j++) {
@@ -190,7 +207,9 @@ public class VentanaPrincipal {
 	 *       juego.
 	 */
 	public void mostrarFinJuego(boolean porExplosion) {
-		
+		if () {
+			
+		}
 	}
 
 	/**
@@ -204,7 +223,7 @@ public class VentanaPrincipal {
 					@Override
 					public void actionPerformed(ActionEvent e) {
 						String CadenaBoton = (((JButton) e.getSource()).getText());
-						if (pantallaPuntuacion.getText().contains("-1")) {
+						if (pantallaPuntuacion.getText().contains("")) {
 							contador++;
 						} else {
 							contador--;

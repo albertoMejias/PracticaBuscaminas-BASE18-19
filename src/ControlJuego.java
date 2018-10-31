@@ -126,7 +126,12 @@ public class ControlJuego {
 		boolean fin = false;
 		for (int i = 0; i < tablero.length; i++) {
 			for (int j = 0; j < tablero.length; j++) {
-
+				if (tablero[i][j] == MINA) {
+					fin = true;
+				}
+				else {
+					fin = false;
+				}
 			}
 		}
 		return fin;
